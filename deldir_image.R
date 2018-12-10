@@ -8,7 +8,7 @@ library(rlist)
 library(purrr)
 
 # Read and convert to grayscale
-load.image("giraffe.jpg") %>% grayscale() -> x
+load.image("inputs/giraffe.jpg") %>% grayscale() -> x
 
 # This is just to define frame limits
 x %>% 
@@ -63,7 +63,7 @@ doPlot(2000)
 
 ############for filled image
 # Read and convert to grayscale
-load.image("giraffe.jpg") %>% grayscale() -> x
+load.image("inputs/giraffe.jpg") %>% grayscale() -> x
 
 # This is just to define frame limits
 x %>% 

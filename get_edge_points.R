@@ -3,7 +3,7 @@ library(tidyverse)
 library(TSP)
 
 # Read and convert to grayscale
-load.image("giraffe.jpg") %>% grayscale() -> x
+load.image("inputs/giraffe.jpg") %>% grayscale() -> x
 
 #will something as simple as boundary() work?
 #nope!
