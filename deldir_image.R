@@ -7,10 +7,6 @@ library(colourlovers)
 library(rlist)
 library(purrr)
 
-# Download the image
-#file="http://ereaderbackgrounds.com/movies/bw/Frankenstein.jpg"
-#download.file(file, destfile = "frankenstein.jpg", mode = 'wb')
-
 # Read and convert to grayscale
 load.image("giraffe.jpg") %>% grayscale() -> x
 
@@ -152,3 +148,4 @@ ggplot(triang_df, aes(x = x, y = y)) +
   theme_void() +
   scale_x_continuous(expand=c(0,0))+
   scale_y_continuous(expand=c(0,0), trans=reverse_trans())
+
